@@ -9,7 +9,7 @@ export default function JourneyCard({ data }) {
   }
 
   const dynamicStyle = {
-
+    
   }
 
   // 获取当前日期并与截止日期比较
