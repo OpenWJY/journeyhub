@@ -1,0 +1,87 @@
+.journeyCard {
+    width: 95%;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border: 1px solid #ccc;
+    position: relative;
+
+    /* 设置背景图像 */
+    background-image: url(./ningbo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 添加阴影效果 */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
+    /* 添加过渡效果 */
+    transition: transform 0.3s ease-in-out;
+
+    /* 为 ::before 伪元素添加样式 */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(173, 216, 230, 0.2);
+        backdrop-filter: blur(6px);
+        border-radius: inherit;
+    }
+
+    .journeyCard-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .journeyCard-header {
+        display: flex;
+        justify-content: space-between; // 使两者分开
+        align-items: center; // 垂直居中对齐
+    }
+
+    .journeyCard-title {
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        line-height: 1.5;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .journeyCard-date {
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        line-height: 1.5;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    // 点击查看详情提示
+    .journeyCard-tip {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 22px; // 字体稍大
+        align-self: flex-end; // 置于右下角
+    }
+
+    // 添加一个状态用于过期
+    &.journeyCard-expired {
+
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('./ningbo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            background-color: rgba(128, 128, 128, 0.2); // 灰色伪元素背景
+        }
+
+    }
+}

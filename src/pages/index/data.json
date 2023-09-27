@@ -1,0 +1,74 @@
+{
+    "journeyList": [
+        {
+            "id": "1",
+            "destination": "北京",
+            "startDate": "2022-10-01",
+            "endDate": "2022-10-05",
+            "price": "1000美元",
+            "imageUrl": "http://example.com/beijing.jpg",
+            "description": "探访中国的首都，体验其丰富的历史与文化",
+            "availability": true
+        },
+        {
+            "id": "2",
+            "destination": "上海",
+            "startDate": "2023-11-10",
+            "endDate": "2023-11-14",
+            "price": "1200美元",
+            "imageUrl": "http://example.com/shanghai.jpg",
+            "description": "领略东方明珠的现代魅力",
+            "availability": true
+        },
+        {
+            "id": "3",
+            "destination": "成都",
+            "startDate": "2024-03-15",
+            "endDate": "2024-03-20",
+            "price": "900美元",
+            "imageUrl": "http://example.com/chengdu.jpg",
+            "description": "品味美食，亲近大熊猫",
+            "availability": false
+        },
+        {
+            "id": "4",
+            "destination": "杭州",
+            "startDate": "2024-04-10",
+            "endDate": "2024-04-15",
+            "price": "850美元",
+            "imageUrl": "http://example.com/hangzhou.jpg",
+            "description": "体验西湖的自然与诗意",
+            "availability": true
+        },
+        {
+            "id": "5",
+            "destination": "西安",
+            "startDate": "2024-05-20",
+            "endDate": "2024-05-25",
+            "price": "950美元",
+            "imageUrl": "http://example.com/xian.jpg",
+            "description": "步入历史，探寻秦始皇兵马俑的秘密",
+            "availability": true
+        },
+        {
+            "id": "6",
+            "destination": "西安",
+            "startDate": "2024-05-20",
+            "endDate": "2024-05-25",
+            "price": "950美元",
+            "imageUrl": "http://example.com/xian.jpg",
+            "description": "步入历史，探寻秦始皇兵马俑的秘密",
+            "availability": true
+        },
+        {
+            "id": "7",
+            "destination": "西安",
+            "startDate": "2024-05-20",
+            "endDate": "2024-05-25",
+            "price": "950美元",
+            "imageUrl": "http://example.com/xian.jpg",
+            "description": "步入历史，探寻秦始皇兵马俑的秘密",
+            "availability": true
+        }
+    ]
+}
