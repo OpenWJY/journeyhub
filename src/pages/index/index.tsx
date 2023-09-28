@@ -5,9 +5,8 @@ import { useLoad, navigateTo } from '@tarojs/taro'
 import { AtTabBar, AtAvatar } from 'taro-ui'
 import React, { Component, useState, useEffect } from 'react'
 
-import JourneyCard from '@/components/card/journey_card'
-
-import dataList from './data.json'
+import Mine from '@/components/mine/mine'
+import Home from '@/components/home/home'
 
 import './index.scss'
 
@@ -37,19 +36,11 @@ export default function Index() {
         activeTab === 0 ?
           // 如果是首页，则显示行程列表
           (
-            <View className='cardList'>
-              {
-                dataList.journeyList.map((journey) => {
-                  return (
-                    <JourneyCard key={journey.id} data={journey}></JourneyCard>
-                  )
-                })
-              }
-            </View>
+            <Home></Home>
           ) :
           // 如果是我的，则显示个人信息
           (
-            <View>待开发...</View>
+            <Mine></Mine>
           )
       }
 
